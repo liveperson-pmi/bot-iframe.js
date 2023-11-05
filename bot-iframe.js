@@ -10,13 +10,14 @@ function agentIsTyping(target) {
   console.log(target.innerText);
   if (
     target.innerText === 'DEV_WEB_PMI_BOT' ||
+    target.innerText === 'PMI Virtual Assistant' ||
     target.innerText === 'Message us' ||
     target.innerText === 'PMI Survey Bot'
   ) {
     return 'Virtual assistant is typing';
   }
 
- return 'Live Agent is typing';
+ return 'Agent is typing';
 }
 
 function addMessagingWith(data, eventInfo) {
